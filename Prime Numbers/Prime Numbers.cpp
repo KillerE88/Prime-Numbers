@@ -17,14 +17,14 @@ int main()
 
 	for (int i = 0; i <= HowMany; i++)
 	{
-		PrimeNumberVector.push_back(i); // creating vector to store numbers to be checked if they are prime numbers
+		PrimeNumberVector.push_back(i);
 		if (i == 78498)
 		{
 			break;
 		}
 	}
 
-	isPrime(PrimeNumberVector, HowManyPointer); // call to function
+	isPrime(PrimeNumberVector, HowManyPointer);
 
 	system("pause");
 	return 0;
@@ -39,7 +39,7 @@ void isPrime(vector<int>& PrimeNumberVector, int* HowManyPointer)
 
 		for (int j = 0; j < *HowManyPointer; j++)
 		{
-			if (2 > PrimeNumberVector[j]) //prime number must be bigger then 1
+			if (2 > PrimeNumberVector[j])
 			{
 			cout << endl;
 			}
